@@ -265,4 +265,3 @@ function checkNums(index){
 
 
 // end of testimonials slider
-

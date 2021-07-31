@@ -659,7 +659,7 @@ footer .content{
 }
 
 .about-section-2 .content .top{
-    margin: 30px 0;
+    margin: 30px 0 50px 0;
 }
 
 .about-section-2 .content .top ul li{
@@ -680,21 +680,26 @@ footer .content{
     transform: translateX(-50%);
     width: 10px;
     height: 10px;
-    background-color: var(--main-color);
+    background-color: transparent;
     border: 2px solid var(--main-color);
     border-radius: 50%;
 }
 
 .about-section-2 .content .top ul li.active::after{
-    background-color: transparent;
     border: 2px solid var(--main-color);
+    background-color: var(--main-color);
 }
 
 .about-section-2 .content .slider-3-box .slider-3 {
+    display: flex;
     display: none;
 }
 .about-section-2 .content .slider-3-box .slider-3.active {
-    display: block;
+    display: flex;
+}
+
+.about-section-2 .content .bottom {
+    margin: 0 20px;
 }
 
 .about-section-2 .content .bottom .our-company{
@@ -702,14 +707,18 @@ footer .content{
     width: 100%;
     margin: 0 auto;
     background-color: var(--medium-main-color);
-    padding: 50px;
+    padding: 25px 20px 50px;
     color: #fff;
-    text-align: left;
+    text-align: center;
 }
 .about-section-2 .content .bottom .our-company h3{
     font-size: 24px;
     margin: 10px 0;
     text-transform: uppercase;
+}
+
+.about-section-2 .content .bottom .our-company p{
+    opacity: 0.8;
 }
 
 /* end of section 2 */
@@ -718,7 +727,7 @@ footer .content{
 
 .about-section-3 {
     background-color: #d5efcd !important;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .about-section-3 .header h2{
@@ -758,6 +767,7 @@ footer .content{
 }
 
 .about-section-3 .about-content .about-numbers span{
+    display: inline-block;
     padding: 5px;
     cursor: pointer;
 }
@@ -774,6 +784,7 @@ footer .content{
 
 .about-section-4 {
     background-color: #d5efcd !important;
+    padding-bottom: 0 !important;
 }
 
 .about-section-4 .header h2{
@@ -785,7 +796,7 @@ footer .content{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
-    transform: translateY(100px);
+    transform: translateY(50px);
     align-items: center;
 }
 .about-section-4 .about-content .img-slider-box .img-slider {
@@ -838,44 +849,97 @@ footer .content{
     margin: 20px auto 40px auto;
 }
 
+.about-section-5 .about-content .choose-dir {
+    width: 400px;
+    height: 400px;
+    margin: 25px auto 50px auto;
+    position: relative;
+}
+
+.about-section-5 .about-content .choose-dir.disabled{
+    display: none;
+}
+
+.about-section-5 .about-content .choose-dir::before{
+    content: "";
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--medium-main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-section-5 .about-content .choose-dir img{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in;
+}
+
+.about-section-5 .about-content .choose-dir img:nth-child(1){
+    transform: translate(-50%, -150%);
+}
+.about-section-5 .about-content .choose-dir img:nth-child(2){
+    transform: translate(50%, -50%);
+}
+.about-section-5 .about-content .choose-dir img:nth-child(3){
+    transform: translate(-50%, 50%);
+}
+.about-section-5 .about-content .choose-dir img:nth-child(4){
+    transform: translate(-150%, -50%);
+}
+
 .about-section-5 .row{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    display: none;
+}
+
+.about-section-5 .row.active{
+    display: flex;
 }
 
 .about-section-5 .row .column{
     width: 100%;
-    max-width: 250px;
-    position: relative;
-    margin: 10px;
+    display: none;
+}
+
+.about-section-5 .row .column.active{
+    display: block;
 }
 
 .about-section-5 .column img{
+    max-width: 200px;
     width: 100%;
+    border: 5px solid var(--medium-main-color);
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .about-section-5 .row .column .info{
-    position: absolute;
-    top: 0;
-    left: 0;
-    text-align: left;
-    background-color: var(--medium-main-color);
+    max-width: 900px;
     width: 100%;
-    height: 100%;
-    padding: 10px;
-    color: #fff;
-    z-index: -1;
+    margin: 0 auto;
 }
 .about-section-5 .row .column .info .info-header{
     margin: 10px 0;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--medium-main-color);
 }
-.about-section-5 .row .column:hover img{
-    opacity: 0;
+
+.about-section-5 .row .column .info .info-text {
+    margin: 10px 0;
+    font-size: 13px;
 }
+
 
 /* end of section 5 */
 
@@ -936,6 +1000,12 @@ footer .content{
 /* end of section 6 */
 
 @media screen and (max-width: 900px){
+    .about-section-2 .content .slider-3-box .slider-3.active{
+        flex-direction: column;
+    }
+    .about-section-2 .content .bottom{
+        margin: 20px 0;
+    }
     .about-section-3 .about-content{
         flex-direction: column;
         padding-bottom: 50px;
@@ -949,6 +1019,7 @@ footer .content{
         top: 100%;
         left: 50%;
         transform: translate(-50%, -100%);
+        padding: 0 10px;
     }
     .about-section-4 .about-content{
         flex-direction: column;
@@ -962,6 +1033,7 @@ footer .content{
         top: 100%;
         left: 50%;
         transform: translate(-50%, -100%);
+        padding: 0 10px;
     }
 }
 
@@ -972,13 +1044,26 @@ footer .content{
     .about-section-2 .content .bottom img{
         width: 100%;
     }
-    .about-section-2 .content .bottom .our-company{
-        padding: 50px 20px;
-    }
     .about-section-3 .about-content img,
     .about-section-4 .about-content img{
         width: 100%;
     }
+
+    .about-section-5 .about-content .choose-dir {
+        width: 150px;
+        height: 150px;
+        padding: 150px 0;
+    }
+
+    .about-section-5 .about-content .choose-dir::before{
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-section-5 .about-content .choose-dir img{
+        width: 100px;
+    }
+
     .about-section-6 .content form,
     .blog-section-6 .content form,
     .project-section-6 .content form{
@@ -1573,3 +1658,4 @@ footer .content{
 /* end of section 2 */
 
 /* ----------------- end of project html ----------------- */
+
