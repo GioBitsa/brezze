@@ -644,6 +644,46 @@ footer .content{
     background-image: url(./images/about.html/about-hero.png);
 }
 
+/* video background on about html */
+
+#myVideo{
+    position: relative;
+    min-width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#about-hero{
+    background-image: none;
+}
+
+#about-hero .wrapper{
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+/* responsive media */
+
+@media screen and (max-width: 900px){
+    #myVideo{
+        display: none;
+    }
+    #about-hero .background-overflow{
+        display: none;
+    }
+    #about-hero {
+        background-image: url(./images/about.html/about-hero.png);
+    }
+}
+
+
+/* end of responsive media */
+
+/* end of video background on about html */
+
+
 /* end of hero */
 
 /* section 2 */
@@ -791,7 +831,7 @@ footer .content{
 .about-section-4 .header h2{
     color: black !important;
     margin-top: 50px;
-    font-weight: 700;
+    font-weight: 500 !important;
 }
 .about-section-4 .about-content{
     display: flex;
