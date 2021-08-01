@@ -846,6 +846,8 @@ footer .content{
     position: relative;
 }
 
+/* animation for director's images */
+
 .about-section-5 .about-content .choose-dir img{
     transition: 5s;
 }
@@ -870,6 +872,8 @@ footer .content{
         border: 5px solid var(--light-main-color);
     }
 }
+
+/* end of animation for director's images */
 
 .about-section-5 .about-content .choose-dir.disabled{
     display: none;
