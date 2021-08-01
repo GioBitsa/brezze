@@ -847,12 +847,28 @@ footer .content{
 }
 
 .about-section-5 .about-content .choose-dir img{
-    transition: 0.3s;
+    transition: 5s;
 }
 
 .about-section-5 .about-content .choose-dir img:hover{
-    border: 3px solid var(--medium-main-color);
-    border-radius: 50%;
+    animation-name: makeCircle;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes makeCircle {
+    0%{
+        border-radius: 0%;
+        border: 5px solid black;
+    }
+    50%{
+        border-radius: 50%;
+        border: 5px solid var(--light-main-color);
+    }
+    100%{
+        border-radius: 100%;
+        border: 5px solid var(--medium-main-color);
+    }
 }
 
 .about-section-5 .about-content .choose-dir.disabled{
