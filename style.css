@@ -859,7 +859,7 @@ footer .content{
 @keyframes makeCircle {
     0%{
         border-radius: 0%;
-        border: 5px solid black;
+        border: 5px solid var(--light-main-color);
     }
     50%{
         border-radius: 50%;
@@ -867,7 +867,7 @@ footer .content{
     }
     100%{
         border-radius: 100%;
-        border: 5px solid var(--medium-main-color);
+        border: 5px solid var(--light-main-color);
     }
 }
 
