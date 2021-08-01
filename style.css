@@ -852,7 +852,7 @@ footer .content{
 
 .about-section-5 .about-content .choose-dir img:hover{
     animation-name: makeCircle;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
