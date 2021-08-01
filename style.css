@@ -648,7 +648,7 @@ footer .content{
 
 #myVideo{
     position: relative;
-    min-width: 100%;
+    width: 100%;
     min-height: 100vh;
     object-fit: cover;
     z-index: -1;
@@ -780,6 +780,7 @@ footer .content{
     justify-content: center;
     align-items: center;
     transform: translateY(50px);
+    overflow-x: hidden;
 }
 .about-section-3 .about-content .about-text{
     width: 300px;
@@ -812,6 +813,7 @@ footer .content{
     flex-direction: row-reverse;
     transform: translateY(50px);
     align-items: center;
+    overflow-x: hidden;
 }
 .about-section-4 .about-content .about-text{
     width: 300px;
@@ -842,6 +844,15 @@ footer .content{
     height: 400px;
     margin: 25px auto 50px auto;
     position: relative;
+}
+
+.about-section-5 .about-content .choose-dir img{
+    transition: 0.3s;
+}
+
+.about-section-5 .about-content .choose-dir img:hover{
+    border: 3px solid var(--medium-main-color);
+    border-radius: 50%;
 }
 
 .about-section-5 .about-content .choose-dir.disabled{
