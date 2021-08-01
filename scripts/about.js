@@ -37,88 +37,48 @@ function checkActiveYears(index){
 // end of section 2 about html
 
 
-// section 3 about html
+// section 3
 
 
-const section3Numbers = document.querySelectorAll('.about-section-3 .about-content .about-text .about-numbers span')
 
-const aboutNumber1 = document.getElementById('about-number-1')
-const aboutNumber2 = document.getElementById('about-number-2')
-const aboutNumber3 = document.getElementById('about-number-3')
+$(window).scroll(function(){
+  var position = $('.about-section-3 .about-content').offset().top;
+  var scroll = $(window).scrollTop() + $(window).height();
+  if(position <= scroll){
+      $(".about-section-3 .about-content img").addClass("animation3-img");
+  }
+})
+$(window).scroll(function(){
+  var position = $('.about-section-3 .about-content').offset().top;
+  var scroll = $(window).scrollTop() + $(window).height();
+  if(position <= scroll){
+      $(".about-section-3 .about-content .about-text").addClass("animation3");
+  }
+})
 
-const imgSliders = document.querySelectorAll('.about-section-3 .about-content .img-slider-box .img-slider')
-
-aboutNumber1.onclick = () => {
-    checkActive(aboutNumber1)
-    checkImgSlider(imgSliders[0])
-}
-aboutNumber2.onclick = () => {
-    checkActive(aboutNumber2)
-    checkImgSlider(imgSliders[1])
-}
-aboutNumber3.onclick = () => {
-    checkActive(aboutNumber3)
-    checkImgSlider(imgSliders[2])
-}
-
-function checkActive(index){
-    section3Numbers.forEach(num => {
-        num.classList.remove('active');
-    })
-    index.classList.add('active');
-}
-
-function checkImgSlider(index){
-    imgSliders.forEach(slider => {
-        slider.classList.remove('active');
-    })
-    index.classList.add('active');
-}
-
-// end of section 3 about html
+// end of section 3
 
 
-// section 4 about html
+// section 4
 
 
-const section4Numbers = document.querySelectorAll('.about-section-4 .about-content .about-text .about-numbers span')
 
-const aboutNumber4 = document.getElementById('about-number-4')
-const aboutNumber5 = document.getElementById('about-number-5')
-const aboutNumber6 = document.getElementById('about-number-6')
+$(window).scroll(function(){
+  var position = $('.about-section-4 .about-content').offset().top;
+  var scroll = $(window).scrollTop() + $(window).height();
+  if(position <= scroll){
+      $(".about-section-4 .about-content img").addClass("animation4-img");
+  }
+})
+$(window).scroll(function(){
+  var position = $('.about-section-4 .about-content').offset().top;
+  var scroll = $(window).scrollTop() + $(window).height();
+  if(position <= scroll){
+      $(".about-section-4 .about-content .about-text").addClass("animation4");
+  }
+})
 
-const imgSliders2 = document.querySelectorAll('.about-section-4 .about-content .img-slider-box .img-slider')
-
-
-aboutNumber4.onclick = () => {
-  checkActive2(aboutNumber4)
-  checkImgSlider2(imgSliders2[0])
-}
-aboutNumber5.onclick = () => {
-  checkActive2(aboutNumber5)
-  checkImgSlider2(imgSliders2[1])
-}
-aboutNumber6.onclick = () => {
-  checkActive2(aboutNumber6)
-  checkImgSlider2(imgSliders2[2])
-}
-
-
-function checkActive2(index){
-  section4Numbers.forEach(num => {
-      num.classList.remove('active');
-  })
-  index.classList.add('active');
-}
-
-function checkImgSlider2(index){
-  imgSliders2.forEach(slider => {
-      slider.classList.remove('active');
-  })
-  index.classList.add('active');
-}
-
-// end of section 4 about html
+// end of section 4
 
 
 // section 5

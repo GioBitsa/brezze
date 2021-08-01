@@ -781,12 +781,6 @@ footer .content{
     align-items: center;
     transform: translateY(50px);
 }
-.about-section-3 .about-content .img-slider-box .img-slider {
-    display: none;
-}
-.about-section-3 .about-content .img-slider-box .img-slider.active {
-    display: block;
-}
 .about-section-3 .about-content .about-text{
     width: 300px;
     height: 100%;
@@ -796,27 +790,6 @@ footer .content{
     color: #fff;
     position: relative;
     transform: translate(-70px, -30px);
-}
-
-.about-section-3 .about-content .about-numbers{
-    position: absolute;
-    top: 50%;
-    left: -60px;
-    background-color: #fff;
-    color: black;
-    padding: 0 10px 0 20px;
-}
-
-.about-section-3 .about-content .about-numbers span{
-    display: inline-block;
-    padding: 5px;
-    cursor: pointer;
-}
-.about-section-3 .about-content .about-numbers span.active{
-    color: var(--medium-main-color);
-}
-.about-section-3 .about-content .about-numbers span:hover{
-    color: var(--medium-main-color);
 }
 
 /* end of section 3 */
@@ -840,12 +813,6 @@ footer .content{
     transform: translateY(50px);
     align-items: center;
 }
-.about-section-4 .about-content .img-slider-box .img-slider {
-    display: none;
-}
-.about-section-4 .about-content .img-slider-box .img-slider.active {
-    display: block;
-}
 .about-section-4 .about-content .about-text{
     width: 300px;
     height: 100%;
@@ -854,27 +821,7 @@ footer .content{
     padding: 20px 40px;
     color: #fff;
     position: relative;
-    transform: translate(0, -30px);
-}
-.about-section-4 .about-content .about-numbers {
-    position: absolute;
-    top: 50%;
-    background-color: #fff;
-    color: black;
-    display: flex;
-    left: 100%;
-    padding: 0 20px 0 10px;
-    transform: translateX(-20px);
-}
-.about-section-4 .about-content .about-numbers span{
-    padding: 5px;
-    cursor: pointer;
-}
-.about-section-4 .about-content .about-numbers span.active{
-    color: var(--medium-main-color);
-}
-.about-section-4 .about-content .about-numbers span:hover{
-    color: var(--medium-main-color);
+    transform: translate(70px, -30px);
 }
 
 /* end of section 4 */
@@ -1050,33 +997,33 @@ footer .content{
         margin: 20px 0;
     }
     .about-section-3 .about-content{
+        width: 400px;
+        margin: 0 auto;
         flex-direction: column;
         padding-bottom: 50px;
         transform: translate(0);
+    }
+    .about-section-3 .about-content img{
+        width: 100%;
     }
     .about-section-3 .about-content .about-text{
+        width: 400px;
         transform: translate(0);
         padding-bottom: 50px;
     }
-    .about-section-3 .about-content .about-text .about-numbers{
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        padding: 0 10px;
-    }
     .about-section-4 .about-content{
+        width: 400px;
+        margin: 0 auto;
         flex-direction: column;
         transform: translate(0);
     }
+    .about-section-4 .about-content img{
+        width: 100%;
+    }
     .about-section-4 .about-content .about-text{
+        width: 100%;
         padding-bottom: 50px;
         transform: translate(0);
-    }
-    .about-section-4 .about-content .about-numbers{
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -100%);
-        padding: 0 10px;
     }
 }
 
@@ -1087,8 +1034,17 @@ footer .content{
     .about-section-2 .content .content-box .bottom img{
         width: 100%;
     }
+    .about-section-3 .about-content,
+    .about-section-4 .about-content{
+        width: 100%;
+    }
     .about-section-3 .about-content img,
     .about-section-4 .about-content img{
+        width: 100%;
+    }
+
+    .about-section-3 .about-content .about-text,
+    .about-section-4 .about-content .about-text{
         width: 100%;
     }
 
@@ -1704,3 +1660,64 @@ footer .content{
 
 /* ----------------- end of project html ----------------- */
 
+
+
+
+.animation3{
+    animation-name: reveal3;
+    animation-duration: 2.5s;
+}
+.animation3-img{
+    animation-name: reveal3-img;
+    animation-duration: 2.5s;
+}
+@keyframes reveal3{
+    0%{
+        transform: translate(100%, -30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-70px, -30px);
+        opacity: 1;
+    }
+}
+@keyframes reveal3-img{
+    0%{
+        transform: translate(-100%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+
+.animation4{
+    animation-name: reveal4;
+    animation-duration: 2.5s;
+}
+.animation4-img{
+    animation-name: reveal4-img;
+    animation-duration: 2.5s;
+}
+@keyframes reveal4{
+    0%{
+        transform: translate(-100%, -30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(70px, -30px);
+        opacity: 1;
+    }
+}
+@keyframes reveal4-img{
+    0%{
+        transform: translate(100%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
