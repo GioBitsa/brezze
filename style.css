@@ -149,6 +149,13 @@ a{
     padding-bottom: 30px;
     overflow: hidden;
 }
+#section-2 .btn{
+    transition: all 0.3s ease-in;
+}
+#section-2 .btn:hover{
+    color: white;
+    background-color: var(--main-color);
+}
 #section-2 .content{
     display: flex;
     align-items: center;
@@ -219,6 +226,7 @@ a{
     padding-left: 20px;
 }
 
+
 /* end of section 2 */
 
 /* section 3 */
@@ -247,12 +255,13 @@ a{
     padding: 20px 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 #section-3 .content .item img{
     margin-right: 20px;
     width: 100%;
     max-width: 60px;
+    height: 60px;
+    margin-top: 10px;
 }
 
 #section-3 .content .item .text-box{
@@ -261,6 +270,7 @@ a{
 #section-3 .content .item .text-box .text-header{
     margin: 5px 0;
     font-weight: 500;
+    font-size: 13px;
 }
 #section-3 .content .item .text-box .text{
     font-size: 13px;
@@ -367,7 +377,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-width: 300px;
+    min-width: 400px;
     opacity: 0.5;
     transition: all 0.3s ease-in;
 }
@@ -392,23 +402,21 @@ a{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#309313", endColorstr="#52B038", GradientType=1 );
     color: #fff;
     padding: 20px 10px;
-    width: calc(100% - 20px);
+    width: calc(100% - 5px);
     margin: 0 auto;
     transform: translateY(-20px);
-    display: none;
-}
-#section-5 .testimonials .column.active .review{
-    display: block;
 }
 
 #section-5 .testimonials .column .review .review-header{
     font-size: 24px;
     margin: 10px 0;
     font-weight: 400;
+    text-transform: uppercase;
 }
 #section-5 .testimonials .column .review .review-text{
     font-size: 12px;
-    padding-bottom: 10px;
+    padding: 0 20px 10px 20px;
+    height: 40px;
 }
 
 .dots{
@@ -433,45 +441,6 @@ a{
 }
 
 /* end of section 5 */
-
-/* section 6 */
-
-#section-6{
-    text-align: center;
-    padding-bottom: 50px;
-}
-
-#section-6 .content{
-    display: flex;
-    justify-content: center;
-}
-#section-6 .content .column{
-    max-width: 400px;
-    width: 100%;
-    margin: 0 5px;
-    padding: 20px;
-    background-color: var(--medium-main-color);
-    color: #fff;
-}
-#section-6 .content .column img{
-    width: 100%;
-}
-#section-6 .content .column .review{
-    margin-top: 10px;
-    text-align: left;
-}
-#section-6 .content .column .review .review-header{
-    font-size: 21px;
-    margin: 10px 0;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-#section-6 .content .column .review .review-text{
-    font-size: 14px;
-    padding-bottom: 10px;
-}
-
-/* end of section 6 */
 
 /* section 7 */
 
@@ -519,6 +488,7 @@ footer{
     padding: 30px;
     background-color: var(--medium-main-color);
     text-align: center;
+    text-transform: uppercase;
 }
 
 footer .content{
@@ -609,6 +579,9 @@ footer .content{
     }
     #section-4 .content{
         grid-template-columns: auto auto;
+    }
+    #section-5 .testimonials .column .review .review-text{
+        height: auto;
     }
     #section-7 .contact{
         grid-template-columns: auto;
@@ -994,6 +967,13 @@ footer .content{
     color: #fff;
     padding: 20px 0;
     margin-bottom: 50px;
+    text-align: center;
+}
+
+.about-section-6 form,
+.blog-section-6 form,
+.project-section-6 form{
+    margin: 0 auto;
 }
 
 .about-section-6 .header span,
@@ -1171,6 +1151,11 @@ footer .content{
 
 .blog-section-6{
     background-color: #336726;
+    text-align: center;
+}
+
+.blog-section-6 form{
+    margin: 0 auto;
 }
 
 /* responsive media */
@@ -1377,6 +1362,7 @@ footer .content{
 .career-section-6{
     background-color: #336726;
     padding: 20px 0;
+    text-align: center;
 }
 
 .career-section-6 .header {
@@ -1462,7 +1448,7 @@ footer .content{
     justify-content: center;
     text-align: center;
     width: 500px;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #fff;
     position: relative;
     padding-top: 50px;
@@ -1565,8 +1551,11 @@ footer .content{
     background-color: transparent;
     color: var(--medium-main-color);
     cursor: pointer;
+    transition: all 0.3s ease-in;
 }
-
+.project-hero main .btn-box span:hover{
+    background-color: white;
+}
 .project-hero main .btn-box span.active{
     background-color: var(--medium-main-color);
     border: 3px solid var(--medium-main-color);
@@ -1667,7 +1656,12 @@ footer .content{
 .project-section-2 .content .depend-content .item .text-box .text-box-content p{
     font-size: 13px;
 }
-
+.project-section-6{
+    text-align: center;
+}
+.project-section-6 form{
+    margin: 0 auto;
+}
 .project-section-6 .header h2 span{
     font-size: 16px;
 }
