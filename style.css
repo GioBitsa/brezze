@@ -1313,7 +1313,7 @@ footer .content{
 
 .career-section-3 .career-content .item{
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     margin: 20px;
     color: var(--medium-main-color);
     font-size: 14px;
@@ -1363,17 +1363,21 @@ footer .content{
 
 .career-section-4 .about-content .row-1 img:nth-child(1){
     flex: 5;
+    width: 40%;
 }
 .career-section-4 .about-content .row-1 img:nth-child(2){
     flex: 7;
+    width: 60%;
 }
 
 
 .career-section-4 .about-content .row-2 img:nth-child(1){
     flex: 7;
+    width: 60%;
 }
 .career-section-4 .about-content .row-2 img:nth-child(2){
     flex: 5;
+    width: 40%;
 }
 
 /* end of section 4 */
@@ -1482,6 +1486,12 @@ footer .content{
 
 /* responsive media */
 
+@media screen and (max-width: 779px){
+    .career-section-3 .career-content .item{
+        max-width: none;
+    }
+}
+
 @media screen and (max-width: 768px){
     .career-section-2 .content{
         padding: 0 25px !important;
@@ -1508,7 +1518,7 @@ footer .content{
         flex-direction: column;
     }
     .career-section-4 .about-content .img-row img{
-        width: 100%;
+        width: 100% !important;
     }
 }
 
