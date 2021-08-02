@@ -1361,6 +1361,21 @@ footer .content{
     width: 50%;
 }
 
+.career-section-4 .about-content .row-1 img:nth-child(1){
+    flex: 5;
+}
+.career-section-4 .about-content .row-1 img:nth-child(2){
+    flex: 7;
+}
+
+
+.career-section-4 .about-content .row-2 img:nth-child(1){
+    flex: 7;
+}
+.career-section-4 .about-content .row-2 img:nth-child(2){
+    flex: 5;
+}
+
 /* end of section 4 */
 
 /* section 5 */
@@ -1486,6 +1501,15 @@ footer .content{
         table-layout: fixed;
     }
 
+}
+
+@media screen and (max-width: 600px){
+    .career-section-4 .about-content .img-row{
+        flex-direction: column;
+    }
+    .career-section-4 .about-content .img-row img{
+        width: 100%;
+    }
 }
 
 /* end of responsive media */
