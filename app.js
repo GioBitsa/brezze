@@ -19,16 +19,25 @@ close.addEventListener('click', () => {
 
 const carousel = document.getElementById('carousel');
 const slider = document.getElementById('slider');
+const sliderContent = document.querySelectorAll('#slider .column')
 
 const next = document.querySelector('.next');
 const prev = document.querySelector('.prev');
 let direction;
+let count = 1;
 
 next.addEventListener('click', function() {
   direction = -1;
   // carousel.style.justifyContent = 'flex-start';
-  slider.style.transform = 'translate(-33%)'; 
-  console.log(direction); 
+  slider.style.transform = 'translate(-33%)';
+  count += 1;
+  console.log(count);
+  if (count < 3){
+    checkActive(sliderContent[count])
+  }else{
+    count = count % 3;
+    checkActive(sliderContent[count])
+  }
 });
 
 prev.addEventListener('click', function() {
@@ -37,8 +46,15 @@ prev.addEventListener('click', function() {
     slider.appendChild(slider.firstElementChild);
   }
   // carousel.style.justifyContent = 'flex-end';    
-  slider.style.transform = 'translate(33%)';  
-  
+  slider.style.transform = 'translate(33%)';
+  count += 1;
+  console.log(count);
+  if (count < 3){
+    checkActive(sliderContent[count])
+  }else{
+    count = count % 3;
+    checkActive(sliderContent[count])
+  }
 });
 
 slider.addEventListener('transitionend', function() {
@@ -57,5 +73,12 @@ slider.addEventListener('transitionend', function() {
   })
 }, false);
 
+
+function checkActive(index){
+  sliderContent.forEach(slider => {
+    slider.classList.remove('active');
+  })
+  index.classList.add('active');
+}
 
 // end of section 5 slider in index html

@@ -342,7 +342,10 @@ a{
 #section-5 .header h2{
     text-transform: uppercase;
 }
-
+#section-5 .testimonials-box{
+    width: 100%;
+    overflow: hidden;
+}
 #section-5 .testimonials{
     width: 500px;
     display: flex;
@@ -397,7 +400,6 @@ a{
     flex-direction: column;
     justify-content: center;
     opacity: 0.5;
-    transition: all 0.3s ease-in;
 }
 #section-5 .testimonials .column.active{
     opacity: 1;
