@@ -567,6 +567,9 @@ footer .content{
     #section-5 .testimonials {
         overflow: hidden;
     }
+    #section-5 .testimonials .column{
+        opacity: 1;
+    }
     #section-5 .testimonials .column .review .review-text{
         height: auto;
     }
