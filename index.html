@@ -7,6 +7,7 @@
     <title>index.html</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body id="index">
     
@@ -80,55 +81,22 @@
         </main>
     </div>
 
-    <section id="section-2">
+    <section id="section-2" class="index-section-2">
         <div class="wrapper">
             <div class="header">
                 <h2>Ongoing projects </h2>
             </div>
             <div class="content">
-                <div class="project-slider active" id="slider-1">
-                    <div class="left">
-                        <img src="./images/index.html/section-2.png" alt="">
-                    </div>
-                    <div class="right">
-                        <div class="text">
-                            <div class="project-name">Flora avenue</div>
-                        </div>
-                        <div class="describtion">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                        </div>
-                    </div>
+                <div class="left">
+                    <img src="./images/index.html/section-2.png" alt="">
                 </div>
-                <div class="project-slider" id="slider-2">
-                    <div class="left">
-                        <img src="./images/index.html/customer-review(1).png" alt="">
+                <div class="right">
+                    <div class="text">
+                        <div class="project-name">Flora avenue</div>
                     </div>
-                    <div class="right">
-                        <div class="text">
-                            <div class="project-name">Project <br> Name</div>
-                        </div>
-                        <div class="describtion">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                        </div>
+                    <div class="describtion">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
                     </div>
-                </div>
-                <div class="project-slider" id="slider-3">
-                    <div class="left">
-                        <img src="./images/index.html/hero-background-main.png" alt="">
-                    </div>
-                    <div class="right">
-                        <div class="text">
-                            <div class="project-name">Project <br> Name</div>
-                        </div>
-                        <div class="describtion">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="numbers">
-                    <span id="num1">1</span>
-                    <span id="num2">2</span>
-                    <span id="num3">3</span>
                 </div>
             </div>
             <a href="./pages/project.html" class="btn">Projects</a>
@@ -243,44 +211,51 @@
         </div>
     </section>
 
-    <section id="section-5">
+    <section id="section-5" class="index-section-5">
         <div class="wrapper">
             <div class="header">
                 <h2>testimonials</h2>
             </div>
-            <div class="testimonials" id="slider">
-                <div class="column" id="column1">
-                    <img src="./images/index.html/Layer 79.png" alt="">
-                    <div class="review">
-                        <div class="review-header">Mr. Kohli</div>
-                        <div class="review-text">
-                            It was a pleasure working with breeze builder. Handover was on time and everything was delivered as commited
+            <div class="testimonials" id="carousel">
+                <div class="slider-box">
+                    <div class="slider" id="slider">
+                        <div class="column active" id="column1">
+                            <img src="./images/index.html/Layer 79.png" alt="">
+                            <div class="review">
+                                <div class="review-header">Mr. Kohli</div>
+                                <div class="review-text">
+                                    It was a pleasure working with breeze builder. Handover was on time and everything was delivered as commited
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column active" id="column2">
+                            <img src="./images/index.html/Layer 79.png" alt="">
+                            <div class="review">
+                                <div class="review-header">MR Sharma</div>
+                                <div class="review-text">
+                                    It was such smooth process and so glad I invested in breeze builders. They made every penny count.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column active" id="column3">
+                            <img src="./images/index.html/Layer 79.png" alt="">
+                            <div class="review">
+                                <div class="review-header">Mr. & Mrs. Parashar</div>
+                                <div class="review-text">
+                                    We live so comfortably here from our house everything’s so close. We are so happy to invest our money with them
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column active" id="column2">
-                    <img src="./images/index.html/Layer 79.png" alt="">
-                    <div class="review">
-                        <div class="review-header">MR Sharma</div>
-                        <div class="review-text">
-                            It was such smooth process and so glad I invested in breeze builders. They made every penny count.
-                        </div>
-                    </div>
+                <div class="controls">
+                    <span class="prev">
+                        <i class="fas fa-arrow-left"></i>
+                    </span>
+                    <span class="next">
+                        <i class="fas fa-arrow-right"></i>
+                    </span>
                 </div>
-                <div class="column" id="column3">
-                    <img src="./images/index.html/Layer 79.png" alt="">
-                    <div class="review">
-                        <div class="review-header">Mr. & Mrs. Parashar</div>
-                        <div class="review-text">
-                            We live so comfortably here from our house everything’s so close. We are so happy to invest our money with them
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="dots">
-                <span id="dot1"></span>
-                <span id="dot2"></span>
-                <span id="dot3"></span>
             </div>
         </div>
     </section>
