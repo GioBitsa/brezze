@@ -142,6 +142,45 @@ a{
     letter-spacing: 5px;
 }
 
+/* video background on index html */
+
+#myVideo3{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero{
+    background-image: none;
+}
+
+.hero .wrapper{
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+/* responsive media */
+
+@media screen and (max-width: 900px){
+    #myVideo{
+        display: none;
+    }
+    #about-hero .background-overflow{
+        display: none;
+    }
+    #about-hero {
+        background-image: url(./images/index.html/hero-background.png);
+    }
+}
+
+
+/* end of responsive media */
+
+/* end of video background on index html */
+
 /* section 2 */
 
 .index-section-2{
@@ -167,6 +206,7 @@ a{
 
 .index-section-2 .content {
     width: 800px;
+    width: 100%;
 }
 
 #section-2 .content .left{
@@ -178,7 +218,8 @@ a{
     min-width: 400px;
 }
 #section-2 .content .right{
-    width: 50%;
+    width: 100%;
+    max-width: 350px;
     text-align: left;
     margin-top: 20px;
 }
@@ -464,6 +505,10 @@ a{
 }
 #section-7 .contact .item .socials a i{
     font-size: 24px;
+    transition: all 0.3s;
+}
+#section-7 .contact .item .socials a i:hover{
+    transform: scale(1.2);
 }
 #section-7 .contact .item:nth-child(2)::before,
 #section-7 .contact .item:nth-child(2)::after{
@@ -508,7 +553,7 @@ footer .content{
 
 @media screen and (max-width: 1000px){
     .index-section-2 .content{
-        width: 600px;
+        padding: 0 !important;
     }
     #section-3 .content{
         grid-template-columns: auto;
@@ -516,23 +561,6 @@ footer .content{
 }
 
 @media screen and (max-width: 900px){
-    #section-4 .content{
-        grid-template-columns: auto auto;
-    }
-    #section-4 .content .item{
-        width: 300px;
-        height: 150px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .hero header ul,
-    .about-hero header ul,
-    .blog-hero header ul,
-    .career-hero header ul,
-    .project-hero header ul{
-        display: none;
-    }
     #section-2 .content{
         flex-direction: column;
         align-items: center;
@@ -552,8 +580,22 @@ footer .content{
         text-align: center;
         transform: translate(0);
     }
-    #section-2 .content .right .text .code{
-        padding: 15px;
+    #section-4 .content{
+        grid-template-columns: auto auto;
+    }
+    #section-4 .content .item{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero header ul,
+    .about-hero header ul,
+    .blog-hero header ul,
+    .career-hero header ul,
+    .project-hero header ul{
+        display: none;
     }
     #section-3{
         padding-bottom: 50px;
