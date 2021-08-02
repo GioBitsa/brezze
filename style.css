@@ -1220,6 +1220,45 @@ footer .content{
     background-image: url(./images/career.html/career-hero.png);
 }
 
+/* video background on career html */
+
+#myVideo4{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.career-hero{
+    background-image: none;
+}
+
+.career-hero .wrapper{
+    position: absolute;
+    top: 0;
+    height: 100%;
+}
+
+/* responsive media */
+
+@media screen and (max-width: 900px){
+    #myVideo4{
+        display: none;
+    }
+    .career-hero .background-overflow{
+        display: none;
+    }
+    .career-hero {
+        background-image: url(./images/career.html/career-hero.png);
+    }
+}
+
+
+/* end of responsive media */
+
+/* end of video background on career html */
+
 /* section 2 */
 
 .career-section-2{
@@ -1406,6 +1445,9 @@ footer .content{
 
 .career-section-6 .header {
     color: #fff;
+}
+.career-section-6 .header h2 span{
+    font-size: 15px;
 }
 .career-section-6 .btn{
     color: #336726;
