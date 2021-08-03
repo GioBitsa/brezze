@@ -659,6 +659,9 @@ footer .content{
         margin: 0;
         width: 100%;
     }
+    .index-section-5 .testimonials .slider-box {
+        width: 100%;
+    }
 }
 
 /* end of responsive media */
