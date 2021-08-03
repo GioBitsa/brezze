@@ -542,6 +542,15 @@ footer .content{
     color: #fff;
 }
 
+footer .content span {
+    margin-top: 10px;
+}
+
+footer .content span a{
+    color: black;
+    text-decoration: underline;
+}
+
 /* end of footer */
 
 
