@@ -783,6 +783,10 @@ footer .content{
     max-width: 450px;
 }
 
+.about-section-2 .content .content-box .bottom img{
+    padding: 0 5px;
+}
+
 .about-section-2 .content .content-box .bottom .our-company{
     max-width: 600px;
     width: 100%;
