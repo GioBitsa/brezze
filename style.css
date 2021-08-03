@@ -791,6 +791,7 @@ footer .content{
     padding: 25px 20px 50px;
     color: #fff;
     text-align: center;
+    transform: translateY(-5px);
 }
 .about-section-2 .content .content-box .bottom .our-company h3{
     font-size: 24px;
