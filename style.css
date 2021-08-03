@@ -1903,6 +1903,42 @@ footer .content{
     }
 }
 
+/* for small devices */
+
+@keyframes reveal3-small{
+    0%{
+        transform: translate(100%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes reveal3-img-small{
+    0%{
+        transform: translate(-100%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .animation3{
+        animation: none;
+        animation-name: reveal3-small;
+        animation-duration: 2.5s;
+    }
+    .animation3-img{
+        animation: none;
+        animation-name: reveal3-img-small;
+        animation-duration: 2.5s;
+    }
+}
+
 
 .animation4{
     animation-name: reveal4;
@@ -1930,6 +1966,40 @@ footer .content{
     100%{
         transform: translate(0);
         opacity: 1;
+    }
+}
+
+/* for small devices */
+
+@keyframes reveal4-small{
+    0%{
+        transform: translate(-100%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes reveal4-img-small{
+    0%{
+        transform: translate(100%, 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .animation4{
+        animation-name: reveal4-small;
+        animation-duration: 2.5s;
+    }
+    .animation4-img{
+        animation-name: reveal4-img-small;
+        animation-duration: 2.5s;
     }
 }
 
