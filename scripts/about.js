@@ -6,22 +6,27 @@ const years = document.querySelectorAll('.about-section-2 .content .top ul li')
 
 const year1 = document.getElementById('year1')
 const year2 = document.getElementById('year2')
+const year3 = document.getElementById('year3')
 
-const bottoms = document.querySelectorAll('.about-section-2 .content .content-box .bottom')
+const contentBoxRect = document.querySelectorAll('.about-section-2 .content .content-box .content-box-rect')
 
 
 year1.onclick = () => {
   checkActiveYears(year1)
-  checkDisplay(bottoms[0])
+  checkDisplay(contentBoxRect[0])
 }
 year2.onclick = () => {
   checkActiveYears(year2)
-  checkDisplay(bottoms[1])
+  checkDisplay(contentBoxRect[1])
+}
+year3.onclick = () => {
+  checkActiveYears(year3)
+  checkDisplay(contentBoxRect[2])
 }
 
 function checkDisplay(index){
-    bottoms.forEach(slider => {
-        slider.classList.remove('active');
+    contentBoxRect.forEach(rect => {
+        rect.classList.remove('active');
     })
     index.classList.add('active')
 }

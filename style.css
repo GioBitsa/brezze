@@ -766,16 +766,21 @@ footer .content{
 }
 
 .about-section-2 .content .content-box {
+    display: block;
+}
+
+.about-section-2 .content .content-box .content-box-rect{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.about-section-2 .content .content-box .content-box-rect.active{
     display: flex;
 }
 
 .about-section-2 .content .content-box .bottom {
     margin: 0 20px;
-    opacity: 0.3;
-}
-
-.about-section-2 .content .content-box .bottom.active{
-    opacity: 1;
+    max-width: 450px;
 }
 
 .about-section-2 .content .content-box .bottom .our-company{
@@ -1063,7 +1068,7 @@ footer .content{
 /* responsive media */
 
 @media screen and (max-width: 900px){
-    .about-section-2 .content .content-box{
+    .about-section-2 .content .content-box .content-box-rect{
         flex-direction: column;
     }
     .about-section-2 .content .content-box .bottom{
