@@ -61,3 +61,47 @@ slider.addEventListener('transitionend', function() {
 // end of section 5 slider in index html
 
 
+// form data
+
+
+// fetch('https://reqres.in/api/users', {
+//   method: 'POST',
+//   headers: {
+//     'Content-Type': 'application/json'
+//   },
+//   body: JSON.stringify({
+//     name: 'User 1'
+//   })
+// }).then(res => {
+//   return res.json()
+// })
+// .then(data => console.log(data))
+// .catch(error => console.log(error))
+
+// const url = "https://hookb.in/6Jpom3WKwquLbb031X6E";
+//       const formEl = document.getElementById("myForm");
+//       formEl.addEventListener("submit", async (e) => {
+//         e.preventDefault();
+//         const formData = new FormData(formEl);
+//         const formDataSerialized = Object.fromEntries(formData);
+//         const jsonObject = {
+//           ...formDataSerialized,
+//           sendToSelf: formDataSerialized.sendToSelf ? true : false,
+//         };
+//         try {
+//           const response = await fetch(url, {
+//             method: "POST",
+//             body: JSON.stringify(jsonObject),
+//             headers: {
+//               "Content-Type": "application/json",
+//             },
+//           });
+//           const json = await response.json();
+//           console.log(json);
+//         } catch (e) {
+//           console.error(e);
+//           alert("there as an error");
+//         }
+//       });
+
+// end of form data
