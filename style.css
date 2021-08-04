@@ -1183,6 +1183,7 @@ footer .content span a{
 
 .blog-section-2{
     text-align: center !important;
+    text-align: -webkit-center;
 }
 
 .blog-section-2 .blog-content{
