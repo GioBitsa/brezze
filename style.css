@@ -1181,6 +1181,10 @@ footer .content span a{
     background-image: url(./images/blog.html/blog-hero.png);
 }
 
+.blog-section-2{
+    text-align: center !important;
+}
+
 .blog-section-2 .blog-content{
     display: grid;
     grid-template-columns: auto auto auto;
