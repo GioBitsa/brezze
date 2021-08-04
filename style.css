@@ -1727,7 +1727,7 @@ footer .content span a{
 }
 
 .project-hero main p{
-    color: var(--medium-main-color);
+    color: white;
     font-weight: 700;
     font-size: 1.5rem;
 }
