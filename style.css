@@ -339,6 +339,15 @@ a{
     cursor: pointer;
     max-width: 250px;
     height: 150px;
+    position: relative;
+}
+
+.index-section-4 .content .item p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
 }
 
 #section-4 .content .item img{
@@ -1607,12 +1616,14 @@ footer .content span a{
 .contact-form form{
     text-align: left;
     padding: 20px;
+    width: 90%;
 }
 
 .contact-form form .inputs{
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 25px 0;
+    padding: 10px 0;
 }
 
 .contact-form form .inputs label{
@@ -1629,6 +1640,7 @@ footer .content span a{
     border-bottom: 1px solid #808080;
     border-radius: 5px;
     font-size: 16px;
+    padding: 5px;
 }
 .contact-form form .inputs input:focus{
     outline: none;
