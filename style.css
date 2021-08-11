@@ -303,6 +303,7 @@ a{
 #section-4{
     text-align: center;
     padding-bottom: 50px;
+    overflow: hidden;
 }
 #section-4 .header{
     display: inline-block;
@@ -337,7 +338,7 @@ a{
     background-color: #4a9637;
     color: #fff;
     cursor: pointer;
-    max-width: 250px;
+    width: 250px;
     height: 150px;
     position: relative;
 }
