@@ -1224,6 +1224,7 @@ footer .content span a{
 .blog-section-2{
     text-align: center !important;
     text-align: -webkit-center;
+    margin-bottom: 50px;
 }
 
 .blog-section-2 .blog-content{
@@ -1255,13 +1256,6 @@ footer .content span a{
     font-size: 21px;
     font-weight: 600;
     margin: 10px 0;
-}
-
-.blog-section-2 .btn{
-    margin: 70px 0 50px;
-    background-color: #336726;
-    border: 2px solid #336726;
-    color: #fff;
 }
 
 .blog-section-6{
