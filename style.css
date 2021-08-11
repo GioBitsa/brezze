@@ -2114,3 +2114,39 @@ footer .content span a{
 
 
 /* end of section 3 and section 4 animations in about html */
+
+
+.inner-blog-section-2{
+    margin: 50px 0 !important;
+}
+
+.inner-blog-content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.inner-blog-content img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.inner-blog-content .inner-blog-name{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 25px 0;
+}
+
+.inner-blog-content .inner-blog-title{
+    color: var(--main-color);
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 20px 0 10px 0;
+}
+
+.inner-blog-content .inner-blog-text p{
+    margin: 15px 0;
+    font-size: 18px;
+}
