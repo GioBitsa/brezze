@@ -1224,7 +1224,7 @@ footer .content span a{
 .blog-section-2{
     text-align: center !important;
     text-align: -webkit-center;
-    margin-bottom: 50px;
+    margin-bottom: 50px !important;
 }
 
 .blog-section-2 .blog-content{
