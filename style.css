@@ -42,6 +42,17 @@ a{
     font-weight: 500;
 }
 
+.bar-btns{
+    display: none;
+}
+
+.bar-btns i{
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
 /* end of constants */
 
 .hero,
@@ -612,13 +623,77 @@ footer .content span a{
 }
 
 @media screen and (max-width: 768px) {
+    
+    .hero,
+    .about-hero,
+    .blog-hero,
+    .career-hero,
+    .project-hero{
+        overflow-x: hidden;
+    }
+
+    /* bar btns */
+    .bar-btns{
+        display: block;
+    }
+
     .hero header ul,
     .about-hero header ul,
     .blog-hero header ul,
     .career-hero header ul,
-    .project-hero header ul{
-        display: none;
+    .project-hero header ul {
+        width: 400px;
+        min-height: calc(100vh - 100px);
+        position: absolute;
+        top: 100px;
+        left: calc(100% + 400px);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--medium-main-color);
+        transition: all 0.3s;
+        padding: 50px 0;
+        z-index: 10;
     }
+
+    .hero header ul li,
+    .about-hero header ul li,
+    .blog-hero header ul li,
+    .career-hero header ul li,
+    .project-hero header ul li {
+        margin: 25px 0;
+    }
+
+    .hero header ul.show,
+    .about-hero header ul.show,
+    .blog-hero header ul.show,
+    .career-hero header ul.show,
+    .project-hero header ul.show {
+        display: flex;
+        left: calc(100% - 400px);
+    }
+
+    #open{
+        position: relative;
+        display: block;
+        z-index: 20;
+    }
+    #open.close{
+        position: relative;
+        display: none;
+        z-index: 20;
+    }
+
+    #close2{
+        position: relative;
+        display: none;
+        z-index: 20;
+    }
+    #close2.show{
+        display: block;
+        z-index: 20;
+    }
+    /* x bar btns x */
     #section-3{
         padding-bottom: 50px;
     }
@@ -660,6 +735,20 @@ footer .content span a{
 }
 
 @media screen and (max-width: 500px) {
+    .hero header ul,
+    .about-hero header ul,
+    .blog-hero header ul,
+    .career-hero header ul,
+    .project-hero header ul{
+        width: 300px;
+    }
+    .hero header ul.show,
+    .about-hero header ul.show,
+    .blog-hero header ul.show,
+    .career-hero header ul.show,
+    .project-hero header ul.show{
+        left: calc(100% - 300px);
+    }
     .wrapper{
         padding: 0 20px;
     }
