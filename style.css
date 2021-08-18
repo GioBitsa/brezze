@@ -2074,6 +2074,93 @@ footer .content span a{
 
 /* ----------------- end of project html ----------------- */
 
+/* ----------------- inner project html ----------------- */
+
+.inner-project-section-2{
+    padding: 50px 0;
+}
+
+.inner-project-section-2 .content{
+    width: 100% !important;
+    max-width: 900px;
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+.inner-project-section-2 .content .inner-project-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-project-section-2 .content2 {
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    margin: 0 auto;
+}
+
+.inner-project-section-2 .content2 .item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-project-section-2 .content2 .item img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .inner-project-section-2 .content {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .inner-project-section-2 .content {
+        padding: 0 !important;
+    }
+}
+@media screen and (max-width: 768px){
+    .inner-project-section-2 .content{
+        text-align: center;
+    }
+    .inner-project-section-2 .content .inner-project-item{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .inner-project-section-2 .content{
+        grid-template-columns: auto;
+    }
+    .inner-project-section-2 .content .inner-project-item{
+        width: 100%;
+        max-width: -webkit-fill-available;
+        max-width: -moz-available;
+    }
+    .inner-project-section-2 .content2 {
+        grid-template-columns: auto;
+    }
+    .inner-project-section-2 .content2 .inner-project-item{
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .inner-project-section-2 .content{
+        grid-template-columns: auto;
+    }
+}
+
+/* ----------------- end of inner project html ----------------- */
+
 
 /* section 3 and section 4 animations in about html */
 
