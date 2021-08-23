@@ -1965,6 +1965,7 @@ footer .content span a{
 
 .project-section-2 .content .item .text-box .text-box-header .check {
     display: flex;
+    align-items: center;
     color: var(--medium-main-color);
     margin-top: 10px;
 }
@@ -1972,7 +1973,6 @@ footer .content span a{
 .project-section-2 .content .item .text-box .text-box-header .check i{
     font-size: 18px;
     margin-right: 5px;
-    margin-top: 5px;
 }
 
 .project-section-2 .content .item .text-box .text-box-header .check p{
