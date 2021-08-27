@@ -1914,7 +1914,7 @@ footer .content span a{
     grid-gap: 20px;
 }
 
-.project-section-2 .content .item {
+.project-section-2 .content a {
     width: 300px;
     border: 10px solid #fff;
     transition: all 0.3s ease-in;
@@ -1924,15 +1924,15 @@ footer .content span a{
     padding-bottom: 20px;
 }
 
-.project-section-2 .content .item:hover{
+.project-section-2 .content a:hover{
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.project-section-2 .content .item .img-box{
+.project-section-2 .content a .img-box{
     position: relative;
 }
 
-.project-section-2 .content .item .item-overlay-img{
+.project-section-2 .content a .item-overlay-img{
     position: absolute;
     top: 0;
     left: 0;
@@ -1944,29 +1944,29 @@ footer .content span a{
     transition: all 0.3s ease-in;
 }
 
-.project-section-2 .content .item:hover .item-overlay-img{
+.project-section-2 .content a:hover .item-overlay-img{
     z-index: 1;
     opacity: 0.3;
 }
 
-.project-section-2 .content .item img{
+.project-section-2 .content a img{
     width: 100%;
     max-width: 300px;
 }
 
-.project-section-2 .content .item .text-box {
+.project-section-2 .content a .text-box {
     margin-top: 10px;
     text-align: left;
     padding: 0 5px;
 }
 
-.project-section-2 .content .item .text-box .text-box-header {
+.project-section-2 .content a .text-box .text-box-header {
     margin: 10px 0 30px 0;
     position: relative;
     height: 70px;
 }
 
-.project-section-2 .content .item .text-box .text-box-header::after{
+.project-section-2 .content a .text-box .text-box-header::after{
     content: "";
     position: absolute;
     top: 100%;
@@ -1977,28 +1977,28 @@ footer .content span a{
     margin-top: 10px;
 }
 
-.project-section-2 .content .item .text-box .text-box-header h3{
+.project-section-2 .content a .text-box .text-box-header h3{
     color: #464646;
     font-weight: 600;
 }
 
-.project-section-2 .content .item .text-box .text-box-header .check {
+.project-section-2 .content a .text-box .text-box-header .check {
     display: flex;
     align-items: center;
     color: var(--medium-main-color);
     margin-top: 10px;
 }
 
-.project-section-2 .content .item .text-box .text-box-header .check i{
+.project-section-2 .content a .text-box .text-box-header .check i{
     font-size: 18px;
     margin-right: 5px;
 }
 
-.project-section-2 .content .item .text-box .text-box-header .check p{
+.project-section-2 .content a .text-box .text-box-header .check p{
     font-size: 11px;
 }
 
-.project-section-2 .content .item .text-box .btn2{
+.project-section-2 .content a .text-box .btn2{
     display: inline-block;
     color: white;
     background-color: var(--medium-main-color);
@@ -2007,7 +2007,7 @@ footer .content span a{
     transition: all 0.3s;
 }
 
-.project-section-2 .content .item .text-box .btn2:hover{
+.project-section-2 .content a .text-box .btn2:hover{
     background-color: white;
     border: 2px solid var(--medium-main-color);
     color: var(--medium-main-color);
@@ -2031,14 +2031,14 @@ footer .content span a{
     .project-section-2 .content{
         text-align: center;
     }
-    .project-section-2 .content .item{
+    .project-section-2 .content a{
         max-width: 250px;
     }
-    .project-section-2 .content .item .img-box img{
+    .project-section-2 .content a .img-box img{
         min-width: -webkit-fill-available;
         min-width: -moz-available;
     }
-    .project-section-2 .content .item .text-box .text-box-header::after{
+    .project-section-2 .content a .text-box .text-box-header::after{
         margin-top: 20px;
     }
 }
@@ -2047,18 +2047,18 @@ footer .content span a{
     .project-section-2 .content{
         grid-template-columns: auto;
     }
-    .project-section-2 .content .item{
+    .project-section-2 .content a{
         width: 100%;
         max-width: -webkit-fill-available;
         max-width: -moz-available;
     }
-    .project-section-2 .content .item .text-box .text-box-header{
+    .project-section-2 .content a .text-box .text-box-header{
         height: 50px;
     }
     .project-section-2 .content .text-box {
         text-align: center !important;
     }
-    .project-section-2 .content .item .text-box .text-box-header::after{
+    .project-section-2 .content a .text-box .text-box-header::after{
         margin-top: 30px;
     }
     .project-section-2 .content .text-box .check{
@@ -2074,13 +2074,13 @@ footer .content span a{
     .project-section-2 .content{
         grid-template-columns: auto;
     }
-    .project-section-2 .content .item .text-box{
+    .project-section-2 .content a .text-box{
         text-align: center;
     }
-    .project-section-2 .content .item .text-box .text-box-content{
+    .project-section-2 .content a .text-box .text-box-content{
         flex-direction: column;
     }
-    .project-section-2 .content .item .text-box .text-box-content i {
+    .project-section-2 .content a .text-box .text-box-content i {
         margin: 5px 0;
     }
 }
