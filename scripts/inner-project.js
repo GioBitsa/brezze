@@ -4,7 +4,14 @@ var modal = document.getElementById("myModal");
 // var img = document.getElementById("myImg");
 var modalImg = document.getElementById("img01");
 const images = document.querySelectorAll('.inner-project-section-2 .content .inner-project-item img')
+const images2 = document.querySelectorAll('.inner-project-section-2 .content2 .item img')
 images.forEach(img => {
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+})
+images2.forEach(img => {
   img.onclick = function(){
     modal.style.display = "block";
     modalImg.src = this.src;

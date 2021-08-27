@@ -256,6 +256,19 @@ a{
     padding-left: 20px;
 }
 
+.index-section-2 .content .right .describtion .btns-box{
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.index-section-2 .content .right .describtion .btns-box a{
+    white-space: nowrap;
+}
+
+.index-section-2 .content .right .describtion .btns-box a:nth-child(1){
+    padding: 12px 25px;
+}
 
 /* end of section 2 */
 
@@ -612,6 +625,12 @@ footer .content span a{
         margin: 0 auto;
         text-align: center;
         transform: translate(0);
+    }
+    .index-section-2 .content .right .describtion{
+        padding-left: 0px !important;
+    }
+    .index-section-2 .content .right .describtion .btns-box{
+        margin-top: 20px;
     }
     #section-4 .content{
         grid-template-columns: auto auto;
