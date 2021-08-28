@@ -1893,6 +1893,16 @@ footer .content span a{
     color: white;
     font-weight: 700;
     font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.project-hero main p span{
+    cursor: pointer;
+}
+
+.project-hero main p span.active{
+    color: #fff;
+    background-color: var(--main-color);
 }
 
 /* section 2 */
@@ -1912,6 +1922,11 @@ footer .content span a{
     display: grid !important;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
+    display: none !important;
+}
+
+.project-section-2 .content.active{
+    display: grid !important;
 }
 
 .project-section-2 .content a {
