@@ -2117,7 +2117,29 @@ footer .content span a{
 /* ----------------- inner project html ----------------- */
 
 .inner-project-section-2{
-    padding: 50px 0;
+    padding: 30px 0;
+}
+
+.inner-project-section-2 .choose-section{
+    margin: 0 auto 30px auto;
+    max-width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+}
+
+.inner-project-section-2 .choose-section span{
+    cursor: pointer;
+    margin: 10px;
+}
+
+.inner-project-section-2 .choose-section .btn{
+    padding: 12px 20px;
+}
+
+.inner-project-section-2 .choose-section span.active{
+    background-color: var(--main-color);
+    color: #fff;
 }
 
 .inner-project-section-2 .content{
@@ -2127,16 +2149,26 @@ footer .content span a{
     grid-template-columns: auto auto auto;
     grid-gap: 20px;
     margin: 0 auto;
+    display: none !important;
+}
+
+.inner-project-section-2 .content.active{
+    display: grid !important;
 }
 
 .inner-project-section-2 .content .inner-project-item{
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
+    min-width: 300px;
+    height: 200px;
 }
 
 .inner-project-section-2 .content .inner-project-item img{
     cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 .inner-project-section-2 .content2 {
@@ -2163,6 +2195,7 @@ footer .content span a{
 @media screen and (max-width: 1000px){
     .inner-project-section-2 .content {
         grid-template-columns: auto auto;
+        justify-content: center;
     }
 }
 
@@ -2172,11 +2205,14 @@ footer .content span a{
     }
 }
 @media screen and (max-width: 768px){
+    .inner-project-section-2 .choose-section{
+        justify-content: center;
+    }
     .inner-project-section-2 .content{
-        text-align: center;
+        justify-content: center;
     }
     .inner-project-section-2 .content .inner-project-item{
-        max-width: 250px;
+        /* max-width: 250px; */
         margin: 0 auto;
     }
 }
@@ -2201,6 +2237,12 @@ footer .content span a{
 @media screen and (max-width: 500px){
     .inner-project-section-2 .content{
         grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width: 375px){
+    .inner-project-section-2 .choose-section{
+        overflow-x: hidden;
     }
 }
 
