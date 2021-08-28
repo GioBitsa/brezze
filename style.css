@@ -2058,6 +2058,12 @@ footer .content span a{
     }
 }
 
+@media screen and (max-width: 633px){
+    .project-hero main p span{
+        width: 250px;
+    }
+}
+
 @media screen and (max-width: 600px){
     .project-section-2 .content{
         grid-template-columns: auto;
