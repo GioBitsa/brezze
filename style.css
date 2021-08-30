@@ -521,6 +521,17 @@ a{
 
 /* section 7 */
 
+.office{
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.office p{
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+}
+
 #section-7{
     text-transform: uppercase;
     text-align: center;
